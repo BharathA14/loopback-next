@@ -24,6 +24,8 @@ jobs:
         os: [ubuntu-latest]
         node-version: [16, 18, 19]
         include:
+          - os: windows-latest
+            node-version: 18 # LTS
           - os: macos-latest
             node-version: 18 # LTS
       fail-fast: false
